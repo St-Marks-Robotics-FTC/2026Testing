@@ -9,6 +9,8 @@ import com.pedropathing.util.Timer;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
+import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
+
 @Autonomous(name = "Example Auto", group = "Examples")
 public class ExampleAuto extends LinearOpMode {
 
