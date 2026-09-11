@@ -18,7 +18,7 @@ import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
  * <p>No driving happens here on purpose: nothing calls followPath(). The
  * PathChains below only show how each curve slots into follower.pathBuilder().
  */
-@TeleOp(name = "EX Pose Geometry", group = "EXAMPLES")
+@TeleOp(name = "EX Pose Geometry", group = "EXAMPLES") //tis an example
 public class PosesAndGeometryExample extends OpMode {
 
     private Follower follower; //Tis a follower
