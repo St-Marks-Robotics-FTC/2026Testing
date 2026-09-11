@@ -29,25 +29,23 @@ public class FullAutoExample extends LinearOpMode {
         firstPath = follower.pathBuilder()
                 .addPath(new BezierLine(startPose, secondPose))
                 .setLinearHeadingInterpolation(startPose.getHeading(), secondPose.getHeading())
-                .addTemporalCallback(0.5, () -> telemetry.addData("Auto", "Start position"))
                 .build();
 
         secondPath = follower.pathBuilder()
                 .addPath(new BezierLine(secondPose, thirdPose))
                 .setLinearHeadingInterpolation(secondPose.getHeading(), thirdPose.getHeading())
-                .addTemporalCallback(0.5, () -> telemetry.addData("Auto", "Second Position"))
                 .build();
 
         thirdPath = follower.pathBuilder()
                 .addPath(new BezierLine(thirdPose, endPose))
                 .setLinearHeadingInterpolation(secondPose.getHeading(), endPose.getHeading())
-                .addTemporalCallback(0.5, () -> telemetry.addData("Auto", "Third position"))
+
                 .build();
 
         endPath = follower.pathBuilder()
                 .addPath(new BezierCurve(thirdPose, new Pose(60, 54), endPose))
                 .setLinearHeadingInterpolation(thirdPose.getHeading(), endPose.getHeading())
-                .addTemporalCallback(0.5, () -> telemetry.addData("Auto", "End Position"))
+
                 .build();
     }
 
