@@ -24,12 +24,10 @@ public class PosesAndGeometryExample extends OpMode {
     private Follower follower; //Tis a follower
 
     // Poses: Pedro measures x/y in inches and heading in radians (CCW positive).
-    private final Pose startPose = new Pose(24, 120, Math.toRadians(270));
-    private final Pose midPose = new Pose(48, 96, Math.toRadians(180));
-    private final Pose controlPose = new Pose(48, 60);
-    private final Pose extraControlPose = new Pose(24, 48);
-    private final Pose endPose = new Pose(60, 36, Math.toRadians(90));
-    private final Pose stopPose = new Pose(36, 72, Math.toRadians(0));
+    private final Pose startPose = new Pose(72, 5, Math.toRadians(270));
+    private final Pose secondPose = new Pose(72, 96, Math.toRadians(180));
+    private final Pose thirdPose = new Pose(12, 60);
+    private final Pose endPose = new Pose(120, 60, Math.toRadians(90));
 
     // Raw geometry objects, built directly (not generated).
     private BezierLine line;
