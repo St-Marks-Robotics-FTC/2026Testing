@@ -21,7 +21,7 @@ import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 @TeleOp(name = "EX Pose Geometry", group = "EXAMPLES")
 public class PosesAndGeometryExample extends OpMode {
 
-    private Follower follower;
+    private Follower follower; //Tis a follower
 
     // Poses: Pedro measures x/y in inches and heading in radians (CCW positive).
     private final Pose startPose = new Pose(24, 120, Math.toRadians(270));
